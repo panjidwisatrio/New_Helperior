@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helperior</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .nav-list-item {
+            padding: 10px 10px 10px 10px;
+            border-radius: 8px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .nav-list-item:hover {
+            background: rgb(0, 0, 0, 0.1);
+            box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
+        }
+
+        .item-question {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        ::placeholder {
+            color: #2D68A2;
+        }
+
+        input[type=text] {
+            width: 83.33%;
+            border: 3px solid #2D68A2;
+            outline: none;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #2D68A2;
+        }
+
+        .content-slider-item {
+            width: 900px;
+            height: 246px;
+            border-radius: 20px;
+            background-image: url(asset/slider_task.svg);
+        }
+
+        .carousel-inner, .slider-carousel, .slider {
+            width: 900px;
+        }
+
+        .emergency {
+            width: 390px;
+            height: 150px;
+            background-image: url(asset/task_emergency.svg);
+        }
+
+        .other {
+            width: 390px;
+            height: 150px;
+            background-image: url(asset/other_task.svg);
+        }
+
+        .content {
+            margin-left: 16.66666667%;
+        }
+
+        .content-more {
+            width: 785px;
+        }
+
+        .sorting {
+            font-family: 'Manrope', sans-serif;
+            color: #369FFF;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="menu p-4 col-2 position-fixed d-inline-block">
+        <div class="top text-center">
+            <img src="asset/Logo.svg" alt="helperior">
+        </div>
+
+        <div class="item mt-5 ps-4">
+            <ul class="nav-list-container list-unstyled">
+                <li class="nav-list-item h6 mb-4">
+                    <img src="asset/Quester.svg" alt="Quester" class="list-item me-3">
+                    <a href="#" class="text-decoration-none text-muted">Quester</a>
+                </li>
+                <li class="nav-list-item h6 mb-4">
+                    <img src="asset/Helper.svg" alt="Helper" class="list-item me-3">
+                    <a href="#" class="text-decoration-none text-muted">Helper</a>
+                </li>
+                <li class="nav-list-item h6 mb-4">
+                    <img src="asset/Stats.svg" alt="Statistik" class="list-item me-3">
+                    <a href="#" class="text-decoration-none text-muted">Statistik</a>
+                </li>
+                <li class="nav-list-item h6">
+                    <img src="asset/Setting.svg" alt="Setting" class="list-item me-3">
+                    <a href="#" class="text-decoration-none text-muted">Setting</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content p-2 border-start border-end d-inline-block col-7">
+        <div class="header w-100">
+            <div class="item-greeting">
+                <p class="text-primary">Halo <span><b>Agan</b></span>, senang melihat anda kembali!</p>
+            </div>
+
+            <div class="search-bar-container">
+                <div class="item-search-bar">
+                    <div class="item-question d-inline-block col-3">
+                        <p class="h3"><b>Butuh Bantuan?</b></p>
+                    </div>
+
+                    <form action="#"
+                        class="float-end d-inline-block border-0 bg-primary bg-opacity-25 border rounded-2 col-4">
+                        <input type="text" placeholder="Search..." name="search" class="bg-transparent border-0 ms-1">
+                        <button type="submit" class="bg-transparent border-0 border rounded-2 mb-1 float-end me-1"><img
+                                src="asset/search.svg" alt="search"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider mx-auto pt-5">
+            <div id="myCarousel" class="slider-carousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                    <div class="content-slider-item carousel-item active p-5">
+                        <div class="slider-item-title">
+                            <h2 class="text-light d-inline-block">Penjaga</h2>
+                            <img src="" alt="" class="d-inline-block float-end">
+                            <img src="" alt="" class="d-inline-block float-end">
+                        </div>
+                        <br><br><br><br>
+                        <div class="slider-item-keterangan">
+                            <p class="text-light d-inline-block">Jaga anak, lansia dan hewan</p>
+                            <button class="d-inline-block float-end"></button>
+                        </div>
+
+                    </div>
+
+                    <div class="content-slider-item carousel-item p-5">
+                        <div class="slider-item-title">
+                            <h2 class="text-light d-inline-block">Mekanik</h2>
+                            <img src="" alt="" class="d-inline-block float-end">
+                            <img src="" alt="" class="d-inline-block float-end">
+                        </div>
+                        <br><br><br><br>
+                        <div class="slider-item-keterangan">
+                            <p class="text-light d-inline-block">Mobil, Motor atau Kendaraan Lainnya</p>
+                            <button class="d-inline-block float-end"></button>
+                        </div>
+                    </div>
+
+                    <div class="content-slider-item carousel-item p-5">
+                        <div class="slider-item-title">
+                            <h2 class="text-light d-inline-block">ART</h2>
+                            <img src="" alt="" class="d-inline-block float-end">
+                            <img src="" alt="" class="d-inline-block float-end">
+                        </div>
+                        <br><br><br><br>
+                        <div class="slider-item-keterangan">
+                            <p class="text-light d-inline-block">Mencuci, Setrika atau beres-beres</p>
+                            <button class="d-inline-block float-end"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="content-more mx-auto">
+            <div class="emergency d-inline-block">
+
+            </div>
+
+            <div class="other d-inline-block">
+
+            </div>
+        </div>
+
+        <div class="content-tugas">
+            <div class="container-title ms-5 me-5">
+                <h3 class="title d-inline-block">Daftar Tugas</h3>
+                <div class="sort d-inline-block float-end">
+                    <img src="asset/Sorting.svg" alt="sorting" class="d-inline-block">
+                    <p class="sorting d-inline-block">Sort</p>
+                </div>
+            </div>
+
+            <div class="container-tugas">
+                <div class="card-tugas">
+                    <div class="head-tugas">
+
+                    </div>
+                    
+                    <div class="card-keterangan">
+
+                    </div>
+
+                    <div class="card-review">
+
+                    </div>
+
+                    <div class="card-review-container-text">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar p-2 bg-warning d-inline-block col-2 position-fixed">
+        <h1>Test</h1>
+    </div>
+
+    <!-- Bootstrap Javascript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Popper Javascript -->
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
