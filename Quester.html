@@ -11,19 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
+
         .nav-list-item {
             padding: 10px 10px 10px 10px;
             border-radius: 8px;
-            font-family: 'Manrope', sans-serif;
         }
 
         .nav-list-item:hover {
             background: rgb(0, 0, 0, 0.1);
             box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
-        }
-
-        .item-question {
-            font-family: 'Manrope', sans-serif;
         }
 
         ::placeholder {
@@ -41,26 +40,33 @@
         }
 
         .content-slider-item {
-            width: 900px;
+            width: 800px;
             height: 246px;
             border-radius: 20px;
             background-image: url(asset/slider_task.svg);
         }
 
         .carousel-inner, .slider-carousel, .slider {
-            width: 900px;
+            width: 800px;
+            border-radius: 20px;
         }
 
         .emergency {
             width: 390px;
             height: 150px;
-            background-image: url(asset/task_emergency.svg);
+            background-image: url(asset/emergency_task.svg);
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            border-radius: 20px;
         }
 
         .other {
             width: 390px;
             height: 150px;
             background-image: url(asset/other_task.svg);
+            background-repeat: no-repeat;
+            margin-left: 5px;
+            border-radius: 20px;
         }
 
         .content {
@@ -68,12 +74,17 @@
         }
 
         .content-more {
-            width: 785px;
+            width: 800px;
+            height: 150px;
         }
 
         .sorting {
-            font-family: 'Manrope', sans-serif;
             color: #369FFF;
+        }
+
+        .btn-slider {
+            border-radius: 5px;
+            border: none;
         }
 
     </style>
@@ -131,45 +142,51 @@
         </div>
 
         <div class="slider mx-auto pt-5">
-            <div id="myCarousel" class="slider-carousel carousel slide" data-bs-ride="carousel">
+            <div id="myCarousel" class="slider-carousel carousel slide shadow-lg" data-bs-ride="carousel">
             <div class="carousel-inner">
                     <div class="content-slider-item carousel-item active p-5">
                         <div class="slider-item-title">
-                            <h2 class="text-light d-inline-block">Penjaga</h2>
+                            <h2 class="text-light d-inline-block fw-bold">Penjaga</h2>
                             <img src="" alt="" class="d-inline-block float-end">
                             <img src="" alt="" class="d-inline-block float-end">
                         </div>
+
                         <br><br><br><br>
+
                         <div class="slider-item-keterangan">
                             <p class="text-light d-inline-block">Jaga anak, lansia dan hewan</p>
-                            <button class="d-inline-block float-end"></button>
+                            <button class="btn-slider d-inline-block float-end me-5 h4 shadow fw-bold">Pesan</button>
                         </div>
 
                     </div>
 
                     <div class="content-slider-item carousel-item p-5">
                         <div class="slider-item-title">
-                            <h2 class="text-light d-inline-block">Mekanik</h2>
+                            <h2 class="text-light d-inline-block fw-bold">Mekanik</h2>
                             <img src="" alt="" class="d-inline-block float-end">
                             <img src="" alt="" class="d-inline-block float-end">
                         </div>
+
                         <br><br><br><br>
+
                         <div class="slider-item-keterangan">
                             <p class="text-light d-inline-block">Mobil, Motor atau Kendaraan Lainnya</p>
-                            <button class="d-inline-block float-end"></button>
+                            <button class="btn-slider d-inline-block float-end me-5 h4 shadow fw-bold">Pesan</button>
                         </div>
                     </div>
 
                     <div class="content-slider-item carousel-item p-5">
                         <div class="slider-item-title">
-                            <h2 class="text-light d-inline-block">ART</h2>
+                            <h2 class="text-light d-inline-block fw-bold">ART</h2>
                             <img src="" alt="" class="d-inline-block float-end">
                             <img src="" alt="" class="d-inline-block float-end">
                         </div>
+
                         <br><br><br><br>
+
                         <div class="slider-item-keterangan">
                             <p class="text-light d-inline-block">Mencuci, Setrika atau beres-beres</p>
-                            <button class="d-inline-block float-end"></button>
+                            <button class="btn-slider d-inline-block float-end me-5 h4 shadow fw-bold">Pesan</button>
                         </div>
                     </div>
                 </div>
@@ -188,13 +205,19 @@
             </div>
         </div>
 
-        <div class="content-more mx-auto">
-            <div class="emergency d-inline-block">
-
+        <div class="content-more mx-auto mt-3 mb-3">
+            <div class="emergency d-inline-block shadow-lg">
+                <div class="slider-item-title p-3">
+                    <h2 class="text-light fw-bold">Darurat</h2>
+                    <p class="text-light">Minta bantuan cepat</p>
+                </div>
             </div>
 
-            <div class="other d-inline-block">
-
+            <div class="other d-inline-block shadow-lg">
+                <div class="slider-item-title p-3">
+                    <h2 class="fw-bold" style="color: #2D68A2;">Lainnya</h2>
+                    <p class="text-primary">Buat tugas khusus</p>
+                </div>
             </div>
         </div>
 
