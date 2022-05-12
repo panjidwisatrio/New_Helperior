@@ -25,7 +25,9 @@
             box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
         }
 
-        ::placeholder {
+        ::placeholder,
+        .head-judul-status,
+        .card-keterangan {
             color: #2D68A2;
         }
 
@@ -46,7 +48,9 @@
             background-image: url(asset/slider_task.svg);
         }
 
-        .carousel-inner, .slider-carousel, .slider {
+        .carousel-inner,
+        .slider-carousel,
+        .slider {
             width: 800px;
             border-radius: 20px;
         }
@@ -87,6 +91,11 @@
             border: none;
         }
 
+        .card-tugas {
+            width: 800px;
+            height: 300px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 
@@ -127,7 +136,7 @@
 
             <div class="search-bar-container">
                 <div class="item-search-bar">
-                    <div class="item-question d-inline-block col-3">
+                    <div class="item-question d-inline-block col-4">
                         <p class="h3"><b>Butuh Bantuan?</b></p>
                     </div>
 
@@ -143,7 +152,7 @@
 
         <div class="slider mx-auto pt-5">
             <div id="myCarousel" class="slider-carousel carousel slide shadow-lg" data-bs-ride="carousel">
-            <div class="carousel-inner">
+                <div class="carousel-inner">
                     <div class="content-slider-item carousel-item active p-5">
                         <div class="slider-item-title">
                             <h2 class="text-light d-inline-block fw-bold">Penjaga</h2>
@@ -191,34 +200,32 @@
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
 
-        <div class="content-more mx-auto mt-3 mb-3">
-            <div class="emergency d-inline-block shadow-lg">
-                <div class="slider-item-title p-3">
+        <div class="content-more mx-auto mt-3 mb-5">
+            <button class="emergency d-inline-block shadow-lg border-0">
+                <div class="slider-item-title p-3 text-start">
                     <h2 class="text-light fw-bold">Darurat</h2>
                     <p class="text-light">Minta bantuan cepat</p>
                 </div>
-            </div>
+            </button>
 
-            <div class="other d-inline-block shadow-lg">
-                <div class="slider-item-title p-3">
+            <button class="other d-inline-block shadow-lg border-0">
+                <div class="slider-item-title p-3 text-start">
                     <h2 class="fw-bold" style="color: #2D68A2;">Lainnya</h2>
                     <p class="text-primary">Buat tugas khusus</p>
                 </div>
-            </div>
+            </button>
         </div>
 
         <div class="content-tugas">
@@ -231,16 +238,32 @@
             </div>
 
             <div class="container-tugas">
-                <div class="card-tugas">
+                <div class="card-tugas mx-auto shadow p-4">
                     <div class="head-tugas">
+                        <div class="head-status-icon">
+                            <img src="" alt="">
+                        </div>
 
+                        <div class="head-judul-status fw-bold">
+                            <h4 class="d-inline-block">Title</h4>
+
+                            <button class="bg-transparent border-0 d-inline-block float-end">
+                                <img src="asset/trash.svg" alt="">
+                            </button>
+
+                            <p>status</p>
+                        </div>
                     </div>
-                    
-                    <div class="card-keterangan">
 
+                    <div class="card-keterangan">
+                        <p class="fw-bold">keterangan</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae praesentium sed
+                            voluptatibus animi neque harum commodi officia magnam, eum velit eos enim veniam odio.
+                            Repellendus velit similique natus dolores error.</p>
                     </div>
 
                     <div class="card-review">
+                        <p></p>
 
                     </div>
 
