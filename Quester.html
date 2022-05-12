@@ -27,7 +27,8 @@
 
         ::placeholder,
         .head-judul-status,
-        .card-keterangan {
+        .card-keterangan,
+        .card-review {
             color: #2D68A2;
         }
 
@@ -93,8 +94,14 @@
 
         .card-tugas {
             width: 800px;
-            height: 300px;
+            height: 400px;
             border-radius: 20px;
+        }
+
+        .review-textarea {
+            width: 100%;
+            background-color: #DDEEFF;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -248,7 +255,7 @@
                             <h4 class="d-inline-block">Title</h4>
 
                             <button class="bg-transparent border-0 d-inline-block float-end">
-                                <img src="asset/trash.svg" alt="">
+                                <img src="asset/trash.svg" alt="trash">
                             </button>
 
                             <p>status</p>
@@ -262,13 +269,12 @@
                             Repellendus velit similique natus dolores error.</p>
                     </div>
 
-                    <div class="card-review">
-                        <p></p>
-
+                    <div class="card-review fw-bold">
+                        <p>Review helper</p>
                     </div>
 
                     <div class="card-review-container-text">
-
+                        <textarea name="text" id="review" cols="30" rows="10" class="review-textarea border-0 p-2"></textarea>
                     </div>
                 </div>
             </div>
@@ -276,6 +282,62 @@
     </div>
 
     <div class="sidebar p-2 bg-warning d-inline-block col-2 position-fixed">
+        <div class="head-sidebar">
+            <div class="head-notification">
+                
+            </div>
+
+            <div class="head-message">
+
+            </div>
+
+            <div class="head-account">
+                <div class="profile-img">
+
+                </div>
+
+                <div class="profile-name">
+
+                </div>
+
+                <div class="profile-role">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-saldo">
+            <div class="saldo-head">
+
+            </div>
+
+            <div class="saldo-container">
+                <div class="saldo">
+
+                </div>
+
+                <div class="saldo-transaction">
+                    <div class="topup">
+
+                    </div>
+                    
+                    <div class="transfer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-map">
+            <div class="map-head">
+                <h5></h5>
+                <h5></h5>
+            </div>
+
+            <div class="map">
+
+            </div>
+        </div>
         <h1>Test</h1>
     </div>
 
